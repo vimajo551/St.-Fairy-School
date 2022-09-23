@@ -26,7 +26,7 @@ function addRoom()
 
     localStorage.setItem("roomName", roomName);
     
-    window.location = "kwitterPage.html";
+    window.location = "StFairySchoolRoom.html";
 }
 
 function getData() {  firebase.database().ref("/").on('value', function(snapshot) { document.getElementById("output").innerHTML = ""; snapshot.forEach(function(childSnapshot) { childKey  = childSnapshot.key;
@@ -45,7 +45,7 @@ function redirectToRoomName(name)
 {
   console.log(name);
   localStorage.setItem("roomName", name);
-    window.location = "kwitterPage.html";
+    window.location = "StFairySchoolRoom.html";
 }
 
 function logout() {
