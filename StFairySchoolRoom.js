@@ -1,4 +1,5 @@
-const firebaseConfig = {
+firebase.initializeApp(firebaseConfig)
+{
   apiKey: "AIzaSyDojtQ2uKj3UjNIFbKU1mt7fnHeiz-8aIY",
   authDomain: "conversa-d2bb8.firebaseapp.com",
   databaseURL: "https://conversa-d2bb8-default-rtdb.firebaseio.com",
@@ -45,7 +46,7 @@ function redirectToRoomName(name)
 {
   console.log(name);
   localStorage.setItem("roomName", name);
-    window.location = "StFairySchoolRoom.html";
+    window.location = "StFairySchoolPage.html";
 }
 
 function logout() {
