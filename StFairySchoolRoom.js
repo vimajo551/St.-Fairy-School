@@ -1,5 +1,4 @@
-firebase.initializeApp(firebaseConfig)
-{
+var firebaseConfig = {
   apiKey: "AIzaSyDojtQ2uKj3UjNIFbKU1mt7fnHeiz-8aIY",
   authDomain: "conversa-d2bb8.firebaseapp.com",
   databaseURL: "https://conversa-d2bb8-default-rtdb.firebaseio.com",
@@ -9,8 +8,9 @@ firebase.initializeApp(firebaseConfig)
   appId: "1:317353238289:web:ec6e99b446b2e7bb24b6b0"
 };
 
+
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig)
 //ADICIONE SEUS LINKS FIREBASE
 
   userName = localStorage.getItem("userName");
